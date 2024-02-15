@@ -23,7 +23,7 @@ body {
 .nav-bar {
   display: flex;
   margin-top: 2em;
-  margin-right: 1em;
+  margin-right: 3em;
   gap: 20pt;
 
 }
@@ -59,13 +59,21 @@ h2 {
    font-size: 13pt;
    color: white;
  }
+
+ h5 {
+  font-family: 'Poppins', sans-serif;
+   font-weight: 400;
+   font-size: 8pt;
+   line-height: 10pt;
+   color: #f58544;
+ }
  
  h3 {
   font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 13pt;
     line-height: 17pt;
-    color: #f58544;
+    color: #082b59;
  }
  
  h4 {
@@ -74,7 +82,7 @@ h2 {
   font-size: 13pt;
   line-height: 12pt;
   margin: 0;
-  color: #082b59;;
+  color: #082b59;
  }
 
 a {
@@ -110,14 +118,16 @@ a {
   }
  
 
-.footer {
- margin-top: 0;
- align-items: center;
- text-align: center;
- background-color: #082B59;
- padding: 3px;
- border-top: solid 7px #D98555  
-}
+  .footer {
+    margin-top: 0;
+    align-items: center;
+    text-align: center;
+    background-color: #082B59;
+    padding: 3px;
+    border-top: solid 7px #D98555;
+    padding-left: 30vw;
+    padding-right: 30vw;
+   }
 
 .image-container {
   position: relative;

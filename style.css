@@ -22,7 +22,7 @@ body {
   .nav-bar {
     display: flex;
     margin-top: 2em;
-    margin-right: 1em;
+    margin-right: 3em;
     gap: 20pt;
 
   }
@@ -43,17 +43,13 @@ body {
     line-height: 2em;
   }
 
-  .fas .fa-home .fa-lg {
-    color: #f58544;
-
-  }
-
   h2 {
    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 30pt;
     line-height: 32pt;
     margin-bottom: 20px;
+    color: #f58544;
   }
   
   h1 {
@@ -64,12 +60,21 @@ body {
   }
   
   h3 {
-   font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 13pt;
-    line-height: 17pt;
-    color: #f58544;
+    line-height: 15pt;
+    color: #ffffff;
+    margin: 0;
   }
+
+  h5 {
+    font-family: 'Poppins', sans-serif;
+     font-weight: 400;
+     font-size: 8pt;
+     line-height: 10pt;
+     color: #f58544;
+   }
   
   h4 {
    font-family: 'Poppins', sans-serif;
@@ -82,26 +87,23 @@ body {
   
   
   .main-content {
-   margin-top: 5em;
    margin-left: 90pt;
-   margin-right: 15em;
+   margin-right: 5em;
    display: flex;
    justify-content: space-between;
-   align-items: baseline;
-   gap: 250px; 
+   gap: 150px; 
   }
   
   
   .button {
    margin-top: 20px;
-   margin-bottom: 20px;
+   margin-bottom: 30px;
    align-items: center;
    text-align: center;
-background-color: white;
    width: 150px;
    padding: 10px;
    border-radius: 10px;
-   border: solid 2px #f58544 
+   border: solid 2px #f58544; 
   }
 
   .button:hover {
@@ -116,7 +118,9 @@ background-color: white;
    text-align: center;
    background-color: #082B59;
    padding: 3px;
-   border-top: solid 7px #D98555  
+   border-top: solid 7px #D98555;
+   padding-left: 30vw;
+   padding-right: 30vw;
   }
 
   .image-container {
@@ -139,16 +143,26 @@ background-color: white;
 
   }
   
-  .overlay-text h2,
-  .overlay-text h3 {
-    margin-bottom: 10px;
-  }
   
   .image {
     display: block;
     width: 100%;
     height: auto;
-    opacity: 80%;
+    margin-bottom: 0;
+  }
+
+  .image2 img {
+    display: block;
+    height: auto;
+    margin-bottom: 0;
+    border-radius: 20px;
+
+  }
+
+  .image2  {
+     border-radius: 20px;
+     width: 50vw;
+
   }
 
   .image3 {
@@ -168,6 +182,144 @@ background-color: white;
   /* Style for active underline */
   .underline.active {
     width: 100%;
+  }
+
+  @media (max-width: 900px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .logo img {
+      margin-left: 0;
+      width: 150px;
+    }
+  
+    .nav-bar {
+      margin-top: 1em;
+      flex-direction: row;
+      gap: 30pt;
+      margin-right: 0;
+    }
+  
+    .main-content {
+      flex-direction: row;
+      margin-left: 2em;
+      margin-right: 2em;
+      gap: 20px;
+  
+    }
+  
+    h2 {   
+       font-size: 16pt;
+       line-height: 18pt;
+     }
+     
+     h1 {
+       font-size: 8pt;
+       line-height: 10pt;
+     }
+     
+     h3 { 
+       font-size: 8pt;
+       line-height: 10pt;
+     }
+   
+     h5 {
+        font-size: 8pt;
+        line-height: 10pt;
+      }
+     
+     h4 {
+       font-size: 8pt;
+       line-height: 10pt;
+     }
+  
+    .button {
+      width: 130px; /* Adjust button size for smaller screens */
+    }
+  
+    .image2 {
+      width: 60vw; /* Adjust image width */
+    }
+  
+    .image3 {
+      width: 100vw;
+    }
+  
+    .footer {
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo img {
+      width: 100px; /* Further reduce logo size for very small screens */
+    }
+  
+    .nav-bar {
+      gap: 15pt;
+    }
+  
+    h2 {   
+      font-size: 14pt;
+      line-height: 16pt;
+    }
+    
+    h1 {
+      font-size: 8pt;
+      line-height: 10pt;
+    }
+    
+    h3 { 
+      font-size: 8pt;
+      line-height: 10pt;
+    }
+  
+    h5 {
+       font-size: 8pt;
+       line-height: 10pt;
+     }
+    
+    h4 {
+      font-size: 8pt;
+      line-height: 10pt;
+    }
+  
+     .button {
+      margin-left: 1em;
+      margin-right: 1em;
+      width: auto; 
+      margin-bottom: 10px;
+      text-align: center;/* Adjust layouts and sizes to better fit very small screens */
+    }
+
+    .main-content {
+      align-items: center;
+      flex-direction: column;
+      margin-left: 1em;
+      margin-right: 1em;
+      width: auto; 
+      margin-bottom: 10px;
+      text-align: center;/* Adjust layouts and sizes to better fit very small screens */
+    }
+  
+
+    .image2 {
+      margin-left: 1em;
+      margin-right: 1em; 
+      width: 80vw;
+      margin-bottom: 10px;
+      text-align: center;/* Adjust layouts and sizes to better fit very small screens */
+    }
+
+    .image-container .overlay-text {
+      left: 50%;
+      width: 40%;
+      text-align: center
+    ; /* Adjust overlay text box for narrower screens */
+    }
   }
   
 

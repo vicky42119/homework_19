@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #082b59;
+  border-bottom: solid 7px #D98555 ;
+}
+
+.logo img {
+  margin-top: 5pt;
+  margin-left: 70pt;
+  width: 200px; 
+  height: auto; 
+}
+
+.nav-bar {
+  display: flex;
+  margin-top: 2em;
+  margin-right: 3em;
+  gap: 20pt;
+
+}
+
+.nav-elements {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5pt
+}
+
+a {
+  text-decoration: none;
+}
+
+.fa-lg {
+  color: white;
+  line-height: 2em;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+   font-weight: 400;
+   font-size: 13pt;
+   line-height: 15pt;
+   margin-bottom: 20px;
+   color: #082b59;
+ }
+ 
+ h1 {
+  font-family: 'Poppins', sans-serif;
+   font-weight: 400;
+   font-size: 13pt;
+   color: white;
+ }
+
+ h5 {
+  font-family: 'Poppins', sans-serif;
+   font-weight: 400;
+   font-size: 8pt;
+   line-height: 10pt;
+   color: #f58544;
+ }
+ 
+ h3 {
+  font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 17pt;
+    line-height: 17pt;
+    color: #082b59;
+ }
+ 
+
+.main-content {
+ margin-top: 5em;
+ margin-left: 90pt;
+ margin-right: 15em;
+ display: flex; 
+ gap: 150px;
+ justify-content: space-between;
+
+}
+
+
+.button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 2px #f58544 
+ }
+
+ .button:hover {
+  background-color: #f58544; /* Change background color on hover */
+ color: white; /* Change text color on hover */
+ opacity: 0.8;
+  }
+ 
+
+  .footer {
+    margin-top: 0;
+    align-items: center;
+    text-align: center;
+    background-color: #082B59;
+    padding: 3px;
+    border-top: solid 7px #D98555;
+    padding-left: 30vw;
+    padding-right: 30vw;
+   }
+
+.image {
+  width: 50%;
+  height: auto;
+  background-color: #59331d;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.image img {
+  border-radius: 10px;
+}
+
+
+.image-container img {
+  width: 100vw;
+  height: auto;
+}
+
+/* Add styles for the underline */
+.underline {
+  width: 0;
+  height: 2px;
+  background-color: #f58544;
+  transition: width 0.3s; /* Add transition for smoother effect */
+}
+
+/* Style for active underline */
+.underline.active {
+  width: 100%;
+}

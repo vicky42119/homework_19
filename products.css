@@ -22,7 +22,7 @@ body {
   .nav-bar {
     display: flex;
     margin-top: 2em;
-    margin-right: 1em;
+    margin-right: 3em;
     gap: 20pt;
 
   }
@@ -61,8 +61,8 @@ body {
   
   h3 {
    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 13pt;
+    font-weight: 700;
+    font-size: 25pt;
     line-height: 17pt;
     color: #f58544;
   }
@@ -75,6 +75,14 @@ body {
     margin: 0;
     color:#082B59;
   }
+
+  h5 {
+    font-family: 'Poppins', sans-serif;
+     font-weight: 400;
+     font-size: 8pt;
+     line-height: 10pt;
+     color: #f58544;
+   }
   
   .button {
     display: flex;
@@ -97,16 +105,18 @@ body {
    }
   
   .footer {
-   margin-top: 0;
-   align-items: center;
-   text-align: center;
-   background-color: #082B59;
-   padding: 3px;
-   border-top: solid 7px #D98555  
-  }
-
+    margin-top: 0;
+    align-items: center;
+    text-align: center;
+    background-color: #082B59;
+    padding: 3px;
+    border-top: solid 7px #D98555;
+    padding-left: 30vw;
+    padding-right: 30vw;
+   }
+ 
   .all-products {
-    margin-top: 2em;
+    margin-top: 1em;
     margin-bottom: 2em;
     margin-left: 8em;
     margin-right: 8em;
@@ -160,6 +170,7 @@ body {
   .title {
     display: flex;
     justify-content: center;
+    margin-top: 1em;
   }
   
   
