@@ -96,12 +96,14 @@ h2 {
   width: 150px;
   padding: 10px;
   border-radius: 10px;
-  border: solid 2px #f58544 
+  border: solid 2px #f58544;
+  opacity: 1;
+  transition: 0.3s;
  }
 
  .button:hover {
-  background-color: #f58544; /* Change background color on hover */
- color: white; /* Change text color on hover */
+  background-color: #f58544; 
+ color: white; 
  opacity: 0.8;
   }
  
@@ -135,15 +137,13 @@ h2 {
   height: auto;
 }
 
-/* Add styles for the underline */
 .underline {
   width: 0;
   height: 2px;
   background-color: #f58544;
-  transition: width 0.3s; /* Add transition for smoother effect */
+  transition: width 0.3s; 
 }
 
-/* Style for active underline */
 .underline.active {
   width: 100%;
 }
@@ -192,7 +192,7 @@ h2 {
    }
 
   .button {
-    width: 130px; /* Adjust button size for smaller screens */
+    width: 130px; 
   }
 
   .footer {
@@ -213,7 +213,7 @@ h2 {
 
 @media (max-width: 480px) {
   .logo img {
-    width: 100px; /* Further reduce logo size for very small screens */
+    width: 100px; 
   }
 
   .nav-bar {

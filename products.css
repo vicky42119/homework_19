@@ -95,7 +95,9 @@ body {
    width: 150px;
    padding: 10px;
    border-radius: 10px;
-   border: solid 2px #f58544 
+   border: solid 2px #f58544 ;
+   opacity: 1;
+  transition: 0.3s;
   }
 
   .button:hover {
@@ -221,7 +223,7 @@ body {
      }
   
     .button {
-      width: 130px; /* Adjust button size for smaller screens */
+      width: 130px; 
     }
   
   
@@ -237,7 +239,7 @@ body {
   
   @media (max-width: 480px) {
     .logo img {
-      width: 100px; /* Further reduce logo size for very small screens */
+      width: 100px; 
     }
   
     .nav-bar {
