@@ -40,20 +40,16 @@ body {
   
   .fa-lg {
     color: white;
-    line-height: 2em;
-  }
-
-  .fas .fa-home .fa-lg {
-    color: #f58544;
 
   }
 
   h2 {
    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 30pt;
-    line-height: 32pt;
+    font-weight: 700;
+    font-size: 15pt;
+    line-height: 18pt;
     margin-bottom: 20px;
+    color: #082B59;
   }
   
   h1 {
@@ -80,24 +76,14 @@ body {
     color:#082B59;
   }
   
-  
-  .main-content {
-   margin-top: 5em;
-   margin-left: 90pt;
-   margin-right: 15em;
-   display: flex;
-   justify-content: space-between;
-   align-items: baseline;
-   gap: 250px; 
-  }
-  
-  
   .button {
+    display: flex;
+    flex-direction: column;
    margin-top: 20px;
    margin-bottom: 20px;
    align-items: center;
    text-align: center;
-background-color: white;
+  background-color: white;
    width: 150px;
    padding: 10px;
    border-radius: 10px;
@@ -119,43 +105,39 @@ background-color: white;
    border-top: solid 7px #D98555  
   }
 
-  .image-container {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-    color: white;
-    width: 40%;
-    background-color: #082b59bc;
-    padding-right: 20px;
-    padding-left: 20px;
+  .all-products {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 8em;
+    margin-right: 8em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+    flex-direction: row;
+    gap: 40px;
+   }
+
+   .product {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px #f58544;
     border-radius: 20px;
+    padding: 10px;
 
-  }
-  
-  .overlay-text h2,
-  .overlay-text h3 {
-    margin-bottom: 10px;
-  }
-  
-  .image {
-    display: block;
-    width: 100%;
-    height: auto;
-    opacity: 80%;
-  }
+   }
 
-  .image3 {
-    width: 100vw;
+   .image img {
+    width: 25vw;
     height: auto;
-    margin-bottom: 0;
-  }
+    border-radius: 10px;
+   }
+
+
+
 
   /* Add styles for the underline */
 .underline {
@@ -169,15 +151,15 @@ background-color: white;
   .underline.active {
     width: 100%;
   }
+
+  .image-container img {
+    width: 100vw;
+    height: auto;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+  }
   
-
   
-  
-  
-
-  
-
-
-
-
-
