@@ -88,7 +88,7 @@ body {
     display: flex;
     flex-direction: column;
    margin-top: 20px;
-   margin-bottom: 20px;
+   margin-bottom: 10px;
    align-items: center;
    text-align: center;
   background-color: white;
@@ -99,8 +99,8 @@ body {
   }
 
   .button:hover {
-    background-color: #f58544; /* Change background color on hover */
-  color: white; /* Change text color on hover */
+    background-color: #f58544; 
+  color: white; 
   opacity: 0.8;
    }
   
@@ -146,18 +146,13 @@ body {
     border-radius: 10px;
    }
 
-
-
-
-  /* Add styles for the underline */
 .underline {
     width: 0;
     height: 2px;
     background-color: #f58544;
-    transition: width 0.3s; /* Add transition for smoother effect */
+    transition: width 0.3s;
   }
   
-  /* Style for active underline */
   .underline.active {
     width: 100%;
   }
@@ -172,5 +167,133 @@ body {
     justify-content: center;
     margin-top: 1em;
   }
+
+  @media (max-width: 900px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .logo img {
+      margin-left: 0;
+      width: 150px;
+    }
+  
+    .nav-bar {
+      margin-top: 1em;
+      flex-direction: row;
+      gap: 30pt;
+      margin-right: 0;
+    }
+  
+    .all-products {
+      flex-direction: row;
+      margin-left: 2em;
+      margin-right: 2em;
+      gap: 10px;
+      padding: 2px;
+  
+    }
+  
+    h2 {   
+       font-size: 10pt;
+       line-height: 10pt;
+     }
+     
+     h1 {
+       font-size: 8pt;
+       line-height: 10pt;
+     }
+     
+     h3 { 
+       font-size: 13pt;
+       line-height: 10pt;
+     }
+   
+     h5 {
+        font-size: 8pt;
+        line-height: 10pt;
+      }
+     
+     h4 {
+       font-size: 8pt;
+       line-height: 10pt;
+     }
+  
+    .button {
+      width: 130px; /* Adjust button size for smaller screens */
+    }
+  
+  
+    .image3 {
+      width: 100vw;
+    }
+  
+    .footer {
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo img {
+      width: 100px; /* Further reduce logo size for very small screens */
+    }
+  
+    .nav-bar {
+      gap: 15pt;
+    }
+  
+    h2 {   
+      font-size: 10pt;
+      line-height: 10pt;
+    }
+    
+    h1 {
+      font-size: 8pt;
+      line-height: 10pt;
+    }
+    
+    h3 { 
+      font-size: 12pt;
+      line-height: 10pt;
+    }
+  
+    h5 {
+       font-size: 8pt;
+       line-height: 10pt;
+     }
+    
+    h4 {
+      font-size: 8pt;
+      line-height: 10pt;
+    }
+  
+     .button {
+      margin-left: 1em;
+      margin-right: 1em;
+      width: auto; 
+      margin-bottom: 10px;
+      text-align: center;/* Adjust layouts and sizes to better fit very small screens */
+    }
+  
+    .image {
+      width: 100%;
+      text-align: center;/* Adjust layouts and sizes to better fit very small screens */
+    }
+
+    .image-container {
+      left: 50%;
+      width: 50%;
+      text-align: center
+    ; /* Adjust overlay text box for narrower screens */
+    }
+
+    .all-products {
+      flex-direction: column;
+  
+    }
+  }
+
   
   
